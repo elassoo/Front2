@@ -14,7 +14,7 @@ const Header = () => {
   return (
         <header className="px-4 py-5 bg-white border-b">
             <div className="md:flex md:justify-between">
-            <h2 className="text-4xl text-violet-600 font-black text-center mb-5 md:mb-0">
+            <h2 className="text-4xl text-green-600 font-black text-center mb-5 md:mb-0">
                 Panel de Administrador G12
             </h2>
 
@@ -22,7 +22,7 @@ const Header = () => {
             <input 
                 type="submit"
                 value="Cerrar Sesión"
-                className="bg-violet-600 mb-5 w-full py-3 text-white uppercase font-bold rounded hover:cursor-pointer hover:bg-violet-300 transition-colors"
+                className="bg-green-600 mb-5 w-full py-3 text-white uppercase font-bold rounded hover:cursor-pointer hover:bg-green-300 transition-colors"
                 onClick={cerrarSesion}
             />
             </div>

@@ -65,7 +65,7 @@ const CrearCategoria = () => {
         <Sidebar/>
         <main className="flex-1">
         <div className="mt-10 flex justify-center">
-        <h1 className="inline bg-gradient-to-r from-indigo-200 via-violet-700 to-indigo-200 bg-clip-text font-display text-5xl tracking-tight text-transparent">
+        <h1 className="inline bg-gradient-to-r from-indigo-200 via-green-700 to-indigo-200 bg-clip-text font-display text-5xl tracking-tight text-transparent">
           crear categoria
         </h1>
         </div>
@@ -103,7 +103,7 @@ const CrearCategoria = () => {
       <input 
           type="submit"
           value="Crear Categoria"
-          className="bg-violet-600 mb-5 w-full py-3 text-white uppercase font-bold rounded hover:cursor-pointer hover:bg-violet-300 transition-colors"
+          className="bg-green-600 mb-5 w-full py-3 text-white uppercase font-bold rounded hover:cursor-pointer hover:bg-green-300 transition-colors"
       />
 
   </form>
