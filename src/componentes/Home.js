@@ -7,7 +7,7 @@ const Home = () => {
   const [categoria, setCategoria] = useState([]);
 
   const cargarCategorias = async () =>{
-    const response = await crud.GET(`/api/categorias`);
+    const response = await crud.GET(`/api/categorias/home`);
     setCategoria(response.categoria);
   }
   useEffect(()=>{
@@ -28,22 +28,22 @@ const Home = () => {
   return (
    <main className='flex-1'>
    <div className='flex justify-center md:w-2/3 lg:w-2/5'>
-   <h1 className="inline p-8 bg-gradient-to-r from-indigo-200 via-green-700 to-indigo-200 bg-clip-text font-display text-5xl tracking-tight text-transparent">
-      Proyecto G12 GRUPO 8
+   <h1 className="inline p-8 bg-gradient-to-r from-indigo-200 via-violet-700 to-indigo-200 bg-clip-text font-display text-5xl tracking-tight text-transparent">
+      Proyecto G12 
     </h1>
     <Link
            className="block text-center my-5 text-gray-100"
          to={"/login"}
          >
-           Oprima para, INICIAL SESIÓN
+           Iniciar Sesión
          </Link>
    </div>  
    <div className="flex-1 bg-white">
       <div className="py-16 sm:py-24 xl:mx-auto xl:max-w-7xl xl:px-8">
         <div className="px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8 xl:px-0">
-          <h4 className="text-4xl font-bold tracking-tight text-gray-900">Compras según la Categoría</h4>
-          <a href="#" className="hidden text-sm font-semibold text-4xl-indigo-900 hover:text-indigo-900 sm:block">
-            ALMACEN MADER
+          <h2 className="text-2xl font-bold tracking-tight text-gray-900">Shop by Category</h2>
+          <a href="#" className="hidden text-sm font-semibold text-indigo-600 hover:text-indigo-500 sm:block">
+            Browse all categories
             <span aria-hidden="true"> &rarr;</span>
           </a>
         </div>
@@ -75,7 +75,7 @@ const Home = () => {
 
         <div className="mt-6 px-4 sm:hidden">
           <a href="#" className="block text-sm font-semibold text-indigo-600 hover:text-indigo-500">
-            ALMACEN MADER
+            Browse all categories
             <span aria-hidden="true"> &rarr;</span>
           </a>
         </div>
@@ -84,7 +84,7 @@ const Home = () => {
 
     <div className="bg-gray-300">
       <div className="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
-        <h2 className="text-xl font-bold text-gray-500">NUESTROS CLIENTES TAMBIEN COMPRARON:</h2>
+        <h2 className="text-xl font-bold text-gray-900">Customers also bought</h2>
 
         <div className="mt-8 grid grid-cols-1 gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8">
           {productos.map((product) => (
@@ -98,7 +98,7 @@ const Home = () => {
                   />
                 </div>
                 <div className="relative mt-4">
-                  <h3 className="text-sm font-medium text-gray-700">{product.nombre}</h3>
+                  <h3 className="text-sm font-medium text-gray-900">{product.nombre}</h3>
                   <p className="mt-1 text-sm text-gray-500">{product.stock}</p>
                 </div>
                 <div className="absolute inset-x-0 top-0 flex h-72 items-end justify-end overflow-hidden rounded-lg p-4">

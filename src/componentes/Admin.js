@@ -79,7 +79,7 @@ const Admin = () => {
 <div className="md:flex md:min-h-screen">
         <Sidebar/>
   <main className="flex-1">
-        <h1 className="inline bg-gradient-to-r from-indigo-200 via-green-700 to-indigo-200 bg-clip-text font-display text-5xl tracking-tight text-transparent">
+        <h1 className="inline bg-gradient-to-r from-indigo-200 via-violet-700 to-indigo-200 bg-clip-text font-display text-5xl tracking-tight text-transparent">
           lista de categorias
         </h1>
     <div>
@@ -105,19 +105,19 @@ const Admin = () => {
                 <input 
                 type="submit"
                 value="Eliminar"
-                className="bg-green-600 mb-5 w-full py-3 text-white uppercase font-bold rounded hover:cursor-pointer hover:bg-green-300 transition-colors"
+                className="bg-violet-600 mb-5 w-full py-3 text-white uppercase font-bold rounded hover:cursor-pointer hover:bg-violet-300 transition-colors"
                onClick={(e) => borrarCategoria(e, item._id)}
             />
              <input 
                 type="submit"
                 value="Actualizar"
-                className="bg-green-600 mb-5 w-full py-3 text-white uppercase font-bold rounded hover:cursor-pointer hover:bg-green-300 transition-colors"
+                className="bg-violet-600 mb-5 w-full py-3 text-white uppercase font-bold rounded hover:cursor-pointer hover:bg-violet-300 transition-colors"
                 onClick={(e) => actualizarCategoria(item._id)}
             />
              <input 
                 type="submit"
                 value="Crear Producto"
-                className="bg-green-600 mb-5 w-full py-3 text-white uppercase font-bold rounded hover:cursor-pointer hover:bg-green-300 transition-colors"
+                className="bg-violet-600 mb-5 w-full py-3 text-white uppercase font-bold rounded hover:cursor-pointer hover:bg-violet-300 transition-colors"
                 onClick={(e) => crearProductos(item._id)}
             />
                 </td>

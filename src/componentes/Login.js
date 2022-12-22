@@ -87,8 +87,8 @@ const Login = () => {
   return (
    <main className='container mx-auto mt-5 md:mt-20 p-5 md:flex md:justify-center'>
    <div className='md:w-2/3 lg:w-2/5'>
-   <h1 className="inline bg-gradient-to-r from-indigo-200 via-green-700 to-blue-300 bg-clip-text font-display text-5xl tracking-tight text-transparent">
-      G12 -- Iniciar sesión ALMACEN MADER -- 2
+   <h1 className="inline bg-gradient-to-r from-indigo-200 via-violet-700 to-indigo-200 bg-clip-text font-display text-5xl tracking-tight text-transparent">
+      G12 Iniciar sesión Ecommerce 2
     </h1>
     <form 
       onSubmit={onSubmit}
@@ -120,7 +120,7 @@ const Login = () => {
       <input 
           type="submit"
           value="Iniciar Sesión"
-          className="bg-green-600 mb-5 w-full py-3 text-white uppercase font-bold rounded hover:cursor-pointer hover:bg-green-300 transition-colors"
+          className="bg-violet-600 mb-5 w-full py-3 text-white uppercase font-bold rounded hover:cursor-pointer hover:bg-violet-300 transition-colors"
       />
 
       <Link
